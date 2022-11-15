@@ -4,11 +4,10 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Buttons from '../share-components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
-
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 
 function Header() {
@@ -21,7 +20,7 @@ function Header() {
                         
                         <Col sm={6} md={7}>
                             <div className="header-top-left">
-                                <p className ="info-text">Welcome to Financial Services Consultant!</p>
+                                <p className ="info-text">Welcome to Our shop</p>
                             </div>
                         </Col>
                         <Col sm={6} md={5}>
@@ -29,7 +28,7 @@ function Header() {
                                 <div className="lang-details">
                                     <Dropdown>
                                         <Dropdown.Toggle variant="success" id="dropdown-basic" className='drop-name'>
-                                            English
+                                            My Account
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
@@ -59,9 +58,7 @@ function Header() {
                                        
                                     </ul>
                                 </div>
-                                <div className="btn-details">
-                                    <Buttons className='first-dem-btn' value="GET A QUOTE"/>
-                                </div>   
+                                  
                             </div>   
                         </Col>
                     </Row>
@@ -72,7 +69,9 @@ function Header() {
                     <Row>
                         <Col sm={6} lg={3}>
                             <div className="header-logo">
-                                <img src = "images/header-logo.png" alt="" />
+                                <Link to ="/">
+                                    <img src = "images/header-logo.png" alt="" />
+                                </Link>
                             </div>
                         </Col>
                         <Col sm={6} lg={9}>
@@ -81,20 +80,29 @@ function Header() {
                                 <Navbar.Toggle aria-controls="navbarScroll" />
                                     <Navbar.Collapse id="navbarScroll">
                                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-                                            <Nav.Link href="#action1">Home</Nav.Link>
-                                            <Nav.Link href="#action2">about us</Nav.Link>
-                                            <Nav.Link href="#action3">Services</Nav.Link>
-                                            <Nav.Link href="#action4">pages</Nav.Link>
-                                            <Nav.Link href="#action5">Projects</Nav.Link>
-                                            <Nav.Link href="#action6">News</Nav.Link>
-                                            <Nav.Link href="#action7">shop</Nav.Link>
-                                            <Nav.Link href="#action8">contact</Nav.Link>
+                                            <ul>
+                                                <li>
+                                                    <Link to ="/">Home</Link>
+                                                </li>
+                                                <li>
+                                                    <Link to ="/">Feature</Link>
+                                                </li>
+                                                <li>
+                                                    <Link to ="/">Shop</Link>
+                                                </li>
+                                                <li>
+                                                    <Link to ="/">Product</Link>
+                                                </li>
+                                                <li>
+                                                    <Link to ="/">Page</Link>
+                                                </li>
+                                            </ul>
                                         </Nav>
                                         <div className="cart-details">
                                             
-                                            <a herf="#!">
+                                            <Link to ="/cart" className='cart'>
                                                 <FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </Navbar.Collapse>
                                 </Navbar>
