@@ -1,28 +1,74 @@
 import Container from 'react-bootstrap/Container';
-import Buttons from '../share-components/Button';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 export default function banner() {
   return (
     <>  
-        <div className="banner-contains">
-            <div className="banner-details">
-                    <div className="banner-txt">
-                        <div className="banner-up-txt">
-                            <Container>
-                            <h1>Communication is the key <br/>for any Global Business</h1>
-                            <div className="banner-btns">
-                                <div className='no-bg-btn me-4'>
-                                    <Buttons value="about us"/>
-                                </div>
-                                <Buttons value="our services"/>
-                            </div>
-                            </Container>
-                        </div>
-                        
-                    </div>
-            </div>
-        </div>
+    <div className='banner-slide'>
+    <Carousel>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../images/slid-1.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <button className='slide-btn'>Shop Now</button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../images/slid-2.jpg"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button className='slide-btn'>Shop Now</button>
+
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../images/slid-3.jpg"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+          <button className='slide-btn'>Shop Now</button>
+
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../images/slid-4.jpg"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>four slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+          <button className='slide-btn'>Shop Now</button>
+
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    </div>
+        
        
         
     </>

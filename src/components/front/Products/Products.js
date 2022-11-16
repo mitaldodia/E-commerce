@@ -10,7 +10,13 @@ const Products = ({productItems, handleAddProduct}) => {
   return (
     <Container>
         <div className='product-all'>
-            
+                    <div className='product-title'>
+                        <h4>special offer</h4>
+                        <h2 className="title-inner1">top collection</h2>
+                        <p className="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                    </div>
                     <div className='products-details'>
                     <Row>
                         {productItems.map((productItems) => (
@@ -29,7 +35,7 @@ const Products = ({productItems, handleAddProduct}) => {
                                             </div>
                                             
                                             <div>
-                                                <button className='product-add-btn'onClick={ () => handleAddProduct(productItems)}><FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon></button>
+                                                <button className='product-add-btn'onClick={ () => handleAddProduct(productItems)}><FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>Add to Cart</button>
                                             </div>
                                         </div>
                                     </div>

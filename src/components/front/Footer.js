@@ -4,7 +4,6 @@ import Form from 'react-bootstrap/Form';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone,  } from '@fortawesome/free-solid-svg-icons';
-import Buttons from '../share-components/Button';
 import { faFacebookF, faTwitter, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -19,7 +18,7 @@ export default function Footer() {
                 <Row>
                     <Col md = {3} col sm = {12}>
                         <div className="footer-logo-sec">
-                            <img src ="images/footerlogo.png" alt='' width = "217"/>
+                            <img src ="../images/footer-logo.png" alt='' width = "217"/>
                             <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
                             <div className="add-details-sec">
@@ -97,7 +96,7 @@ export default function Footer() {
                                     </Col>
                                 </Form>   
                                 <div className="footer-btn">
-                                    <Buttons value="SUBSCRIBE"/>
+                                    {/* <Button>Subscrib</Button> */}
                                 </div>
                             </div>
                         </div>  
@@ -129,7 +128,6 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                
             </Container>
         </div>
     </div>
