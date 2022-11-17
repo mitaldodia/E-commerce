@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';  
 import Container from 'react-bootstrap/Container';
+import {Link} from 'react-router-dom';
 
 
 const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartClearance}) => {
@@ -29,7 +30,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                                                 <td><div className='cart-item-name'>{item.name}</div></td>
                                                 <td>
                                                     <div className='cart-item-function'>
-                                                        <button className='cart-item-add' onClick={() => handleAddProduct(item)}>+</button>
+                                                        <button className='cart-item-add' onClick={() => handleAddProduct(item)}>+</button>{item.quntity}
                                                         <button className='cart-remove-add' onClick={() => handleRemoveProduct(item)}>-</button>
                                                     </div>
                                                 </td>
@@ -54,8 +55,12 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                                 </div>
                             </div>
                             <div className='check-out-btn'>
-                                <button className='check-btn'>Continue Shopping</button>
-                                <button className='check-btn'>Checkout</button>
+                                <Link to ="/">
+                                    <button className='check-btn'>Continue Shopping</button>
+                                </Link>
+                                <Link to ="/checkout">
+                                    <button className='check-btn'>Checkout</button>
+                                </Link>
                             </div>
         </div>
     </Container>

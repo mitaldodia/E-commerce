@@ -48,7 +48,6 @@ const App = () =>{
 
   return(
     <div className="App">
-      <switch>
           <Router>
             <Route>
               <Header cartItems={cartItems}/>
@@ -68,7 +67,6 @@ const App = () =>{
               <Footer/>
             </Route>
           </Router>
-        </switch>
     </div>
   );
  } 

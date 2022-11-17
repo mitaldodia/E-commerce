@@ -504,7 +504,20 @@ margin-left: 10px;
     line-height: 1;
     letter-spacing: 0.02em;
 }
-
+.cart-item-function {
+  background: #fff;
+  border: 1px solid #ddd;
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button.cart-item-add, button.cart-remove-add {
+  border: 0;
+  background-color: #ddd;
+  width: 37px;
+  height: 30px;
+}
 .check-out-btn{
   margin-top: 30px;
   width: 100%;
@@ -567,7 +580,10 @@ margin-left: 10px;
   text-transform: uppercase;
 
 }
-
+.banner-slide{
+  height: 718px;
+  width: 100%;
+}
 .banner-slide .slide-btn {
   padding: 13px 29px;
   color: #fff;
