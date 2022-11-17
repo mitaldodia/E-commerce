@@ -13,7 +13,7 @@ const Products = ({productItems, handleAddProduct}) => {
                     <div className='product-title'>
                         <h4>special offer</h4>
                         <h2 className="title-inner1">top collection</h2>
-                        <p className="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p className="text-center title-per">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             </p>
                     </div>
