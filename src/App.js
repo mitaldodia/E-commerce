@@ -4,7 +4,7 @@ import Header from './components/front/Header.js';
 import Banner from './components/front/Banner.js';
 import data from './components/back/Data/Data.js';
 import RoutesFi from './components/front/RoutesFo/RoutesFi';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './components/front/Footer';
 import Blog from './components/front/Blog';

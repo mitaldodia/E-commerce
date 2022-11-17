@@ -20,7 +20,9 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                             <div>
                                 <div className='cart-table'>
                                     <Table>
-                                        
+                                        <thead>
+                                            <th></th>
+                                        </thead>
                                         <tbody>
                                             <tr>
                                                 {cartItems.map((item) => (
@@ -39,7 +41,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                                                         {item.quntity} * {item.price}
                                                     </div>
                                                 </td>
-                                                <td>cancel</td>
+                                                
                                                 </div>
                                                 ))}
                                             </tr>

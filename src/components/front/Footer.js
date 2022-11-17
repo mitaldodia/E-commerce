@@ -25,7 +25,7 @@ export default function Footer() {
                                 <ListGroup>
                                     <ListGroup.Item>
                                         <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
-                                        <a href='#'>40 Baria Sreet, NewYork City, US</a>
+                                        <a href='#!'>40 Baria Sreet, NewYork City, US</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
@@ -43,34 +43,34 @@ export default function Footer() {
                         <div className="footer-links-details">
                             <h5>Our Links</h5>
                             <ListGroup>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                     Home
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                     News
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                     About Us
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                    Shop
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                    Services 
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                    Contact
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                     Pages
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                    Support
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                     Projects
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="#link1">
+                                <ListGroup.Item action >
                                    Careers 
                                 </ListGroup.Item>
                             </ListGroup>
@@ -111,17 +111,17 @@ export default function Footer() {
                     <div className="social-icon">
                         <ul>
                             <li>
-                                <a herf="#!">
+                                <a >
                                     <FontAwesomeIcon icon={ faFacebookF }></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a herf="#!">
+                                <a >
                                     <FontAwesomeIcon icon={ faTwitter }></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a herf="#!">
+                                <a >
                                     <FontAwesomeIcon icon={ faGooglePlusG }></FontAwesomeIcon>
                                 </a>
                             </li>
