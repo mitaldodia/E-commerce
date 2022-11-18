@@ -5,6 +5,7 @@ import { faCartShopping,faStar } from '@fortawesome/free-solid-svg-icons';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 const Products = ({productItems, handleAddProduct}) => {
   return (
@@ -38,9 +39,9 @@ const Products = ({productItems, handleAddProduct}) => {
                                                 </div>
                                             </div>
                                             
-                                            <div>
+                                            <Link to='/cart'>
                                                 <button className='product-add-btn'onClick={ () => handleAddProduct(productItems)}><FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>Add to Cart</button>
-                                            </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </Col>

@@ -105,7 +105,7 @@ const Header = ({cartItems}) => {
                                                     </li>
                                                 </ul>
                                             </Nav>
-                                            <div className="cart-details">
+                                            {/* <div className="cart-details">
                                                 
                                                 <Link to ="/cart" className='cart'>
                                                     <FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>
@@ -113,7 +113,7 @@ const Header = ({cartItems}) => {
                                                         {cartItems.lenght === 0 ? "" : cartItems.lenght}
                                                     </span>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                         </Navbar.Collapse>
                                     </Navbar>
                                 </div> 
