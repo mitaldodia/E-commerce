@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './components/front/Footer';
 import Blog from './components/front/Blog';
+import Checkout from './components/front/Checkout';
 
 
 const App = () =>{
@@ -63,9 +64,13 @@ const App = () =>{
             <Route path='/' exact>
               <Blog/>
             </Route>
-            <Route>
-              <Footer/>
+            <Route path='/checkout' exact>
+              <Checkout/>
             </Route>
+            <Route>
+              <Footer productItems={productItems}/>
+            </Route>
+            
           </Router>
     </div>
   );

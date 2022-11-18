@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faGooglePlusG,faPinterest,faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
 
@@ -24,19 +24,7 @@ const Header = ({cartItems}) => {
                             </Col>
                             <Col sm={6} md={5}>
                                 <div className="header-top-right">
-                                    <div className="lang-details">
-                                        <Dropdown>
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic" className='drop-name'>
-                                                My Account
-                                            </Dropdown.Toggle>
-    
-                                            <Dropdown.Menu>
-                                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                                            </Dropdown.Menu>
-                                        </Dropdown>
-                                    </div> 
+                                     
                                     <div className="social-icon">
                                         <ul>
                                             <li>
@@ -54,7 +42,21 @@ const Header = ({cartItems}) => {
                                                     <FontAwesomeIcon icon={ faGooglePlusG }></FontAwesomeIcon>
                                                 </a>
                                             </li>
-                                           
+                                            <li>
+                                                <a herf="#!">
+                                                    <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a herf="#!">
+                                                    <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a herf="#!">
+                                                    <FontAwesomeIcon icon={ faFacebookF }></FontAwesomeIcon>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                       
@@ -69,7 +71,7 @@ const Header = ({cartItems}) => {
                             <Col sm={6} lg={3}>
                                 <div className="header-logo">
                                     <Link to ="/">
-                                        <img src = "images/header-logo.png" alt="" />
+                                        <h1>WP-Shopkeeper</h1>
                                     </Link>
                                 </div>
                             </Col>
@@ -84,16 +86,22 @@ const Header = ({cartItems}) => {
                                                         <Link to ="/">Home</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to ="/">Feature</Link>
+                                                        <Link to ="/">Shop Demo</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to ="/">Shop</Link>
+                                                        <Link to ="/">Blogs</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to ="/">Product</Link>
+                                                        <Link to ="/">Templates</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to ="/">Page</Link>
+                                                        <Link to ="/">Layouts</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to ="/">theme features</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to ="/">buy now</Link>
                                                     </li>
                                                 </ul>
                                             </Nav>

@@ -7,7 +7,8 @@ import {Link} from 'react-router-dom';
 const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartClearance}) => {
     const totalPrice = cartItems.reduce((price,item) => price + item.quntity * item.price,0);
   return (
-    <Container>
+    <div className="cart-all-contains">
+        <Container>
         <div className='clear-cart-txt'>
             {cartItems.length >=1 && (
                 <button className='clear-cart-btn' onClick={handleCartClearance}>Clear Cart Item</button>
@@ -66,6 +67,8 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                             </div>
         </div>
     </Container>
+    </div>
+    
     
   )
 }

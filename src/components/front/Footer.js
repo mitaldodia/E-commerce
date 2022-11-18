@@ -1,47 +1,125 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import Form from 'react-bootstrap/Form';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faPhone,  } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
 
 
 
 
-export default function Footer() {
+export default function Footer({ productItems }) {
   return (
     <div>
         <div className="footer-contains">
             <Container>
                 <Row>
-                    <Col md = {3} col sm = {12}>
-                        <div className="footer-logo-sec">
-                            <img src ="../images/footer-logo.png" alt='' width = "217"/>
-                            <p>Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            <div className="add-details-sec">
-                                <ListGroup>
-                                    <ListGroup.Item>
-                                        <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
-                                        <a href='#!'>40 Baria Sreet, NewYork City, US</a>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item>
-                                        <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
-                                        <a href='#'>001-1234-88888</a>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item>
-                                        <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
-                                        <a href='#'>info.deercreative@gmail.com</a>
-                                    </ListGroup.Item>
-                                </ListGroup>
-                            </div>
+                    <Col md = {4} col sm = {12}>
+                        <div className="footer-links-details">
+                            <h5>
+                                Best selling product
+                            </h5>
+                            <Row>
+                        {productItems.map((productItems) => (
+                            
+                                <Col md={12}>
+                                    <div className='card-details'>
+                                        <div>
+                                            <img className='product-img' src={productItems.image} alt={productItems.name}/>
+                                        </div>
+                                        <div className='product-cart-details'>
+                                            <div className='product-txt'>
+                                                <h6 className='product-name'>
+                                                    {productItems.name}
+                                                </h6>
+                                                <div className='product-price'><h4>${productItems.price}</h4></div>
+                                                
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </Col>
+                            
+                        ))}
+                        </Row>
                         </div>
                     </Col>
-                    <Col md = {3} col sm = {12}>
+                    <Col md = {4} col sm = {12}>
                         <div className="footer-links-details">
-                            <h5>Our Links</h5>
+                            <h5>limited time offer</h5>
+                            <Row>
+                        {productItems.map((productItems) => (
+                            
+                                <Col md={12}>
+                                    <div className='card-details'>
+                                        <div>
+                                            <img className='product-img' src={productItems.image} alt={productItems.name}/>
+                                        </div>
+                                        <div className='product-cart-details'>
+                                            <div className='product-txt'>
+                                                <h6 className='product-name'>
+                                                    {productItems.name}
+                                                </h6>
+                                                <div className='product-price'><h4>${productItems.price}</h4></div>
+                                                
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </Col>
+                            
+                        ))}
+                        </Row>
+                        </div>
+                    </Col>
+                    <Col md = {2} col sm = {12}>
+                        <div className="footer-links-details">
+                            <h5>Archives</h5>
+                            <ListGroup>
+                                <ListGroup.Item action >
+                                January-2007
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                February-2007
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                March - 2009
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                April - 2009
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                May - 2010 
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                June - 2011
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                July - 2011
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                August - 2012
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                September - 2013
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                October - 2014
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                November - 2011
+                                </ListGroup.Item>
+                                <ListGroup.Item action >
+                                December - 2000
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </div>
+                    </Col>
+                    <Col md = {2} col sm = {12}>
+                        <div className="footer-links-details">
+                            <h5>meta</h5>
                             <ListGroup>
                                 <ListGroup.Item action >
                                     Home
@@ -58,48 +136,9 @@ export default function Footer() {
                                 <ListGroup.Item action >
                                    Services 
                                 </ListGroup.Item>
-                                <ListGroup.Item action >
-                                   Contact
-                                </ListGroup.Item>
-                                <ListGroup.Item action >
-                                    Pages
-                                </ListGroup.Item>
-                                <ListGroup.Item action >
-                                   Support
-                                </ListGroup.Item>
-                                <ListGroup.Item action >
-                                    Projects
-                                </ListGroup.Item>
-                                <ListGroup.Item action >
-                                   Careers 
-                                </ListGroup.Item>
+                                
                             </ListGroup>
                         </div>
-                    </Col>
-                    <Col md = {3} col sm = {12}>
-                        <div className="footer-links-details">
-                            <h5>Recent News</h5> 
-                            <div className="news-details">
-                                <p>Colombia Gets a Business Makeover</p>
-                                <p>Colombia Gets a Business Makeover</p>
-                            </div>
-                        </div>  
-                    </Col>
-                    <Col md = {3} col sm = {12}>
-                        <div className="footer-links-details">
-                            <h5>Newsletter</h5> 
-                            <div className="news-sletter">
-                                <p>Subscribe our newsletter gor get noti-fication about new updates, etc.</p>
-                                <Form>
-                                    <Col>
-                                        <Form.Control placeholder="Enter Your Email" />
-                                    </Col>
-                                </Form>   
-                                <div className="footer-btn">
-                                    {/* <Button>Subscrib</Button> */}
-                                </div>
-                            </div>
-                        </div>  
                     </Col>
                 </Row>   
             </Container>
@@ -112,17 +151,37 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a >
-                                    <FontAwesomeIcon icon={ faFacebookF }></FontAwesomeIcon>
+                                    Home
                                 </a>
                             </li>
                             <li>
                                 <a >
-                                    <FontAwesomeIcon icon={ faTwitter }></FontAwesomeIcon>
+                                    Shop demo
                                 </a>
                             </li>
                             <li>
                                 <a >
-                                    <FontAwesomeIcon icon={ faGooglePlusG }></FontAwesomeIcon>
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    Template
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    Layout
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    Theme features
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    Buy now
                                 </a>
                             </li>
                         </ul>
