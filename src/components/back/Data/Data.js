@@ -1,10 +1,13 @@
+
+
 const data = {
     productItems: [
                  {
                     id: "1",
                     name: "wedoo logo T-shirt",
                     price: 2222,
-                    image:"../images/pd-1.jpg"
+                    image:"../images/pd-1.jpg",
+
                  },
                  {
                     id: "2",

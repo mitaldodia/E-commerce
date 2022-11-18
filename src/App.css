@@ -137,13 +137,16 @@ p.title-per{
 .header-logo a{
   color: #28293a;
   text-decoration: none;
-  
+}
+.header-logo a:hover{
+  color: #28293a;
+ 
 }
 .header-logo h1{
   font-size: 30px;
 }
 .header-center{
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .header-center .navbar{
   padding: 14px 0;
@@ -544,7 +547,7 @@ button.cart-item-add, button.cart-remove-add {
   border: 0;
   background-color: #ddd;
   width: 37px;
-  height: 30px;
+  height: 31px;
 }
 .check-out-btn{
   margin-top: 30px;
@@ -653,7 +656,7 @@ button.cart-item-add, button.cart-remove-add {
     text-transform: capitalize;
     letter-spacing: 0.05em;
     border: 0;
-    background-color: #28293a9e;
+    background-color: #28293ad4;
     position: absolute;
     top: 44%;
     font-weight: 500;
