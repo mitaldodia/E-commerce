@@ -709,7 +709,22 @@ img.card-img-top {
   align-items: center;
   justify-content: space-between;
 }
-
+.back-cart a{
+  padding: 13px 29px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid #28293a;
+    background-image: linear-gradient(30deg, #28293a 50%, transparent 50%);
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: background 300ms ease-in-out;
+    text-decoration: none;
+}
+.back-cart a:hover{
+  color: #fff;
+}
 .bill-total-details {
   display: flex;
   align-items: center;
@@ -725,7 +740,7 @@ img.card-img-top {
 .place-btn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .place-btn button {
   padding: 13px 29px;

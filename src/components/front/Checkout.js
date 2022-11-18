@@ -1,14 +1,19 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Checkout = () => {
   return (
     <div className='checkout-contains'>
         <Container>
+            
             <Row>
                 <Col md = {6} col sm = {12}>
                     <div className="billing-details">
+                    
                         <h4 className='billing-title'>Billing Details</h4>
                     <Form>
                         <Row>
@@ -84,6 +89,11 @@ const Checkout = () => {
                                 </Form>
                             </div>
                             <div className="place-btn">
+                                <div className="back-cart">
+                                    <Link to ="/cart">
+                                        Back to cart
+                                    </Link>
+                                </div>
                                 <button class="pl-btn">Place Order</button>
                             </div>
                         </div>
