@@ -95,7 +95,9 @@ export default function Footer() {
                                         <Form.Control placeholder="Enter Your Email" />
                                     </Col>
                                 </Form>   
-                                
+                                <div className="footer-btn">
+                                    <button type='button'>subscribe</button>
+                                </div>
                             </div>
                         </div>  
                     </Col>
