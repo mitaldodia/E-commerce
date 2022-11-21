@@ -23,7 +23,7 @@ const App = () =>{
   const handleAddProduct = (product) =>{
     // find-product is already in cart items
     const ProductExist = cartItems.find((item) => item.id === product.id);
-    setChangeColor(!changeColor)
+    
 
     if(ProductExist){
       setCartItems(cartItems.map((item) => item.id === product.id ? {...ProductExist,quntity: ProductExist.quntity+1}:item)
