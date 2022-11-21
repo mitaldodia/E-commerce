@@ -15,7 +15,7 @@ const App = () =>{
   const { productItems } = data;
   const [cartItems, setCartItems] = useState([]);
 
-  const [changeColor, setChangeColor] =useState(false)
+  
 
   // function for handleClick
   
