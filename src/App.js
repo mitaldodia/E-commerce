@@ -15,12 +15,14 @@ const App = () =>{
   const { productItems } = data;
   const [cartItems, setCartItems] = useState([]);
 
+
   
 
   // function for handleClick
   
 
   const handleAddProduct = (product) =>{
+   
     // find-product is already in cart items
     const ProductExist = cartItems.find((item) => item.id === product.id);
     

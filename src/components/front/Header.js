@@ -124,7 +124,7 @@ const Header = ({cartItems}) => {
                                                 </Nav>
                                                 <div className="cart-details">
                                                    
-                                                 <Link  to ="/cart" className='cart'>
+                                                 <Link  to ="/cart" className='cart' >
                                                  <FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>
                                                         <span className='cart-lenght'>
                                                             {cartItems.length === 0 ? "0" : cartItems.length}

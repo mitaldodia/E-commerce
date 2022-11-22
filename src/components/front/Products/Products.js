@@ -40,7 +40,7 @@ const Products = ({productItems, handleAddProduct}) => {
                                             </div>
                                             
                                             <Link>
-                                                <button className='product-add-btn'onClick={() => handleAddProduct(productItems)}><FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>Add to Cart</button>
+                                                <button className='product-add-btn'  onClick={() => handleAddProduct(productItems)}><FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>Add to Cart</button>
                                             </Link>
                                         </div>
                                     </div>

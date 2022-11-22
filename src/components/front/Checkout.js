@@ -94,7 +94,7 @@ const Checkout = () => {
                                         Back to cart
                                     </Link>
                                 </div>
-                                <button class="pl-btn">Place Order</button>
+                                <button className="pl-btn">Place Order</button>
                             </div>
                         </div>
                     </div>
