@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import {Link} from 'react-router-dom';
 
 
+
 const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartClearance}) => {
     const totalPrice = cartItems.reduce((price,item) => price + item.quntity * item.price,0);
         return (
@@ -72,5 +73,4 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
             
         )
 }
-
 export default Cart

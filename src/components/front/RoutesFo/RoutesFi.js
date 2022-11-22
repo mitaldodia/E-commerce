@@ -16,7 +16,8 @@ const RoutesFi = ({productItems, cartItems, handleAddProduct, handleRemoveProduc
             handleRemoveProduct={handleRemoveProduct} 
             handleCartClearance = {handleCartClearance}/>
           </Route>
-          
+         <Route>
+         </Route>
       </Switch>
     </div>
   )

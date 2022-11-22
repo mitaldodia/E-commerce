@@ -3,18 +3,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from 'react-bootstrap/Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG,faPinterest,faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
 import React, { useState } from 'react';
 
-
-
-const Header = ({ cartItems }) => {
+const Header = ({cartItems}) => {
 
     const [state, setstate] = useState(false);
+
   const changeClass=()=>{
     const scrollValue=document.documentElement.scrollTop;
     if(scrollValue>100)
@@ -120,18 +118,18 @@ const Header = ({ cartItems }) => {
                                                             <Link to ="/">theme features</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to ="/">buy now</Link>
+                                                            <Link to ="/cart">buy now</Link>
                                                         </li>
                                                     </ul>
                                                 </Nav>
                                                 <div className="cart-details">
-                                                    
-                                                    <Link to ="/cart" className='cart'>
-                                                        <FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>
+                                                   
+                                                 <Link  to ="/cart" className='cart'>
+                                                 <FontAwesomeIcon icon = { faCartShopping }></FontAwesomeIcon>
                                                         <span className='cart-lenght'>
                                                             {cartItems.length === 0 ? "0" : cartItems.length}
                                                         </span>
-                                                    </Link>
+                                                    </Link> 
                                                 </div>
                                             </Navbar.Collapse>
                                         </Navbar>
@@ -148,5 +146,7 @@ const Header = ({ cartItems }) => {
       )
 }
 
+
+  
 
 export default Header;
